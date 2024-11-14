@@ -10,6 +10,6 @@ module.exports = {
     port:8087,
     proxy: 'http://localhost:8888',
   },
-  publicPath: './'
+  publicPath: '/'
 }
 
