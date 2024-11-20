@@ -1,0 +1,28 @@
+export default {
+    message: {
+      hello: 'Hello World',
+      basicInfo: '基本信息',
+      aboutUs: '关于我们',
+      downloadLink: '下载链接',
+      refer: '请参阅',
+      documentLink: '文档链接',
+      contactDetails: '联系详情',
+      contactEmail: '联系邮箱: rustsbi@163.com',
+      contactAddress: '总部地址: 湖北省武汉市东西湖区国家网络安全基地明德楼B513实验室',
+      whatIsTitle: 'RustSBI是什么',
+      whatIsContent: 'RustSBI是完整的安全引导程序实现，适用于为固件、虚拟化软件和模拟器实现RISC-V SBI接口',
+      whatCanDoTitle: 'RustSBI可以做什么',
+      whatCanDoTitle1: '固件',
+      whatCanDoTitle2: '虚拟化',
+      whatCanDoTitle3: '安全性',
+      whatCanDoContent1: 'RustSBI 是基于 RISC-V SBI (Supervisor Binary Interface)规范的一个实现，可以在硬件和操作系统之间提供标准化的接口，帮助开发者构建固件层',
+      whatCanDoContent2: 'RustSBI 支持虚拟化相关的功能，它可以作为虚拟化软件的基础平台，提供一个可扩展的虚拟化框架，帮助开发者在 RISC-V 架构上实现高效的虚拟化',
+      whatCanDoContent3: '由于 RustSBI 的高安全性和高性能特点，适用于航空航天、物联网以及高安全性领域',
+      theyAreUsingTitle: '他们都在用 RustSBI',
+      historyTitle: 'RustSBI的历史',
+      historyContent1: 'RustSBI 项目孵化于 2020 年 rCore 团队与鹏城实验室共同举办的代码之夏活动，是在 MeowSBI 项目上修改而来的。',
+      historyContent2: '至今，RustSBI经过多年的发展，已广泛运用于裸机固件、虚拟化软件和模拟器中。',
+      teamTitle: '团队成员',
+    },
+  };
+  

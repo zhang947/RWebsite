@@ -2,21 +2,21 @@
 	<Layout>
 		<div class="section">
 			<div class="container" style="max-width: 1160px">
-				<div class="section--header">
+				<!-- <div class="section--header">
 					<h2 class="section--title">{{companyInfo.name}}</h2>
 					<p class="section--description">{{companyInfo.introduction}}</p>
-				</div>
+				</div> -->
 
 				<div class="about-container">
 					<div class="am-g">
 						<div class="am-u-md-6">
 							<div class="our-company-text">
-								<h3>RustSBI的历史</h3>
+								<h3>{{ $t('message.historyTitle') }}</h3>
 								<p>
-									RustSBI 项目孵化于 2020 年 rCore 团队与鹏城实验室共同举办的代码之夏活动，是在 MeowSBI 项目上修改而来的。
+									{{ $t('message.historyContent1') }}
 								</p>
 								<p>
-									至今，RustSBI经过多年的发展，已广泛运用于裸机固件、虚拟化软件和模拟器中。
+									{{ $t('message.historyContent2') }}
 								</p>
 							</div>
 						</div>
@@ -48,7 +48,7 @@
 		<div class="section">
 			<div class="container" style="max-width: 1160px">
 				<div class="section--header">
-					<h2 class="section--title">团队成员</h2>
+					<h2 class="section--title">{{ $t('message.teamTitle') }}</h2>
 				</div>
 
 				<div class="index-container">

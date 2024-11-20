@@ -244,4 +244,5 @@ export default {
     text-align: start;
     line-height: 30px;
 }
+
 </style>

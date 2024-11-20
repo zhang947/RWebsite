@@ -114,38 +114,6 @@
     margin-top: 50px
 }
 
-.index-container .users_item {
-    margin-top: 0px;
-    border: 1px solid #e9e9e9;
-    border-radius: 3px;
-    padding: 30px 15px 0px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.index-container .users_item--logo {
-    width: 150px;
-    height: 150px;
-}
-
-.index-container .users_item--title {
-    font-size: 20px;
-    color: #262626;
-    margin: 20px 0 -10px;
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.index-container .users_item--text {
-    font-size: 15px;
-    line-height: 23px;
-    color: #969696;
-    text-align: start;
-}
-
 .index-container .partners_item {
     margin-top: 0px;
     margin-bottom: 20px;

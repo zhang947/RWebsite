@@ -3077,7 +3077,8 @@ fieldset[disabled] .am-checkbox-inline {
   border-bottom-color: #fff;
 }
 .am-nav-justify {
-  width: 100%;
+  margin-top: 0;
+  width: 50%;
 }
 .am-nav-justify > li {
   float: none;
