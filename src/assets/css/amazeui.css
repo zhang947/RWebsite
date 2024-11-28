@@ -3088,6 +3088,7 @@ fieldset[disabled] .am-checkbox-inline {
 .am-nav-justify > li > a {
   text-align: center;
   margin-bottom: 0;
+  white-space: nowrap; 
 }
 .lte9 .am-nav-justify > li {
   display: table-cell;

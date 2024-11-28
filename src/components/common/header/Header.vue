@@ -2,13 +2,12 @@
 	<div class="header-wrapper">
 		<div class="nav-wrapper header-default">
 			<div class="nav">
-				<!-- <a class="nav-logo">RustSBI</a> -->
 				<img class="nav-logo" src="../../../assets/logo.png" alt="">
 				<ul class="am-nav am-nav-justify">
 					<li><router-link class="router" to="/main">{{ $t('message.basicInfo') }}</router-link></li>
 					<li><router-link class="router" to="/about">{{ $t('message.aboutUs') }}</router-link></li>
-					<li><a class="language-item" @click="changeLanguage('en')">English</a></li>
 					<li><a class="language-item" @click="changeLanguage('zh')">中文</a></li>
+					<li><a class="language-item" @click="changeLanguage('en')">English</a></li>
 					<li><button class="clean-btn" @click="changeTheme()">
 							<svg v-if="theme === 'light'" t="1732709345441" class="icon" viewBox="0 0 1024 1024"
 								version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4438" width="30" height="30">
@@ -60,23 +59,5 @@ export default {
 .router.router-link-active {
 	cursor: default;
 	color: #0e90d2;
-}
-.clean-btn {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	background: none;
-	border: none;
-	cursor: pointer;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-.icon {
-	fill: var(--navTextColor);
-}
-.icon:hover {
-	fill: var(--hoverColor);
 }
 </style>
