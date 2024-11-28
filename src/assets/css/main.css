@@ -1,0 +1,156 @@
+
+
+.headline {
+    display: flex;
+    flex-direction: row;
+}
+
+.headline--header {
+    width: 70%;
+    max-width: 70rem;
+    margin-right: 40px;
+}
+
+.headline--title {
+    font-size: 50px;
+    font-weight: 300;
+    text-align: start;
+    color: var(--textColorDark);
+}
+
+.headline--description {
+    font-size: 20px;
+    line-height: 40px;
+    color: var(--textColor);
+    text-align: start;
+    margin: 13px auto 0;
+}
+
+.headline--right {
+    width: 30%;
+    padding-right: 0;
+    padding-left: 50px;
+}
+
+.headline--button {
+    color: var(--headlineButtonColor);
+    font-size: 2.25rem;
+    margin-top: 60px;
+
+    display: inline-block;
+    width: 100%;
+    min-height: 38px;
+    padding: 16px 30px;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 4px;
+    border: 1px solid;
+    cursor: pointer;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+
+.headline--button:hover {
+    background-color: var(--headlineButtonColor);
+    color: var(--bgColor);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.col1 {
+    min-width: 230px;
+    flex: 1 1;
+    padding: 0rem 2rem;
+}
+
+.canDo--title {
+    text-align: start;
+    font-size: 25px;
+    font-weight: 350;
+    color: var(--textColorDark);
+}
+
+.canDo--description {
+    text-align: start;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 30px;
+    color: var(--textColor);
+    margin: 13px auto 0;
+}
+
+.users-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* 自动换行 */
+    gap: 2rem;
+    /* 控制卡片之间的间距 */
+    justify-content: space-between;
+    /* 子项之间平均分布 */
+    margin: 0 auto;
+    /* 中心对齐容器 */
+    margin-top: 50px;
+}
+
+.users {
+    flex: 1 1 calc(25% - 2rem);
+    /* 每个元素占 25% 减去间距 */
+    max-width: calc(25% - 2rem);
+    /* 防止宽度超出 */
+    box-sizing: border-box;
+    /* 包括 padding */
+    padding: 0;
+    /* 内边距直接定义在 .users_item */
+}
+
+.users_item {
+    margin-top: 0px;
+    border: 1px solid var(--borderColor);
+    border-radius: 15px;
+    padding: 10px 15px 0px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.users_item--logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.users_item--title {
+    font-size: 20px;
+    color: var(--textColorDark);
+    margin-top: 10px;
+    text-align: center;
+    margin-bottom: 0;
+    line-height: 20px;
+}
+
+.users_item--text {
+    font-size: 15px;
+    line-height: 23px;
+    color: var(--textColor); 
+    text-align: start;
+    line-height: 30px;
+}
+
+.section_divider {
+    height: 1px;
+    background: var(--borderColor);
+    border: 0;
+    display: block;
+    padding: 0;
+    margin: 0 auto;
+    width: 1170px
+}

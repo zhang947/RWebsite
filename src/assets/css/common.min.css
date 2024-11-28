@@ -1,9 +1,16 @@
-
+.main-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--bgColor);
+}
 
 /*================================ Header ================================*/
 .header-wrapper{
     display: flex;
     flex-direction: column;
+    background-color: var(--bgColor);
 }
 
 .header-wrapper .header{
@@ -12,7 +19,6 @@
     align-items: center;
     justify-content: center;
     padding: 15px 0;
-    /*background-color: yellow;*/
 }
 
 .header-wrapper .header .header-left{
@@ -47,19 +53,19 @@
 }
 .header-wrapper .header .header-right button{
     padding: 8px 16px;
-    border: 1px solid #59bcdb;
+    border: 1px solid var(--borderColor);
     border-radius: 4px;
-    color: #59bcdb;
-    background-color: #fff;
+    color: var(--borderColor);
+    background-color: var(--bgColor);
 }
 .header-wrapper .header .header-right button:hover {
-    background-color: #59bcdb;
-    color: #ffffff;
+    background-color: var(--borderColor);
+    color: var(--bgColor);
 }
 
 /* header固定 */
 .sticky{
-    background-color: #ffffff;
+    background-color: var(--bgColor);
     position: fixed;
     z-index: 9999;
     top: 0;
@@ -72,8 +78,8 @@
 /*================================ Nav ================================*/
 .nav-wrapper{
     width: 100%;
-    border-top: 1px solid #e9e9e9;
-    box-shadow: 0 1px 3px #e9e9e9;
+    border-top: 1px solid var(--navBorderColor);
+    box-shadow: 0 1px 3px var(--navBorderColor);
 }
 .nav{
     max-width: 1240px;
@@ -91,14 +97,14 @@
 }
 
 .nav .am-nav li a {
-    color: #333;
+    color: var(--navTextColor);
     padding: 0;
     margin: 0;
 }
 
 .nav .am-nav li a:hover {
-    color: #6975a6;
-    background: #fff
+    color: var(--hoverColor);
+    background: var(--bgColor)
 }
 
 @font-face {
@@ -106,13 +112,39 @@
     src: url(../fonts/fontawesome-webfont.ttf)
 }
 
+.nav-logo {
+    width: 75px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 30px;
+    border-radius: 10px;
+}
 
+.language-item {
+    cursor: pointer;
+}
 
-/*================================ Nav ================================*/
+.clean-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.icon {
+    fill: var(--navTextColor);
+}
 
-
-
+.icon:hover {
+    fill: var(--hoverColor);
+}
+/*================================ Page ================================*/
 
 .page-header {
     text-align: center;
@@ -124,12 +156,12 @@
 
 .page-header .page-header-title {
     font-size: 60px;
-    color: #fff;
+    color: var(--bgColor);
     font-weight: 400
 }
 
 .breadcrumb-box {
-    border-bottom: 1px solid #e9e9e9
+    border-bottom: 1px solid var(--borderColor)
 }
 
 .breadcrumb-box .am-breadcrumb {
@@ -139,11 +171,11 @@
 
 .breadcrumb-box .am-breadcrumb li a {
     font-size: 14px;
-    color: #262626
+    color: var(--textColorDark)
 }
 
 .breadcrumb-box .am-breadcrumb .am-active {
-    color: #6975a6
+    color: var(--hoverColor)
 }
 
 .section {
@@ -153,13 +185,14 @@
 .section .section--header .section--title {
     font-size: 50px;
     font-weight: 300;
-    text-align: center
+    text-align: center;
+    color: var(--textColorDark);
 }
 
 .section .section--header .section--description {
     font-size: 20px;
     line-height: 30px;
-    color: #9b9b9b;
+    color: var(--textColor);
     text-align: start;
     margin: 13px auto 0;
 }
@@ -221,7 +254,7 @@
 }
 
  .footer .footer_main--column_title {
-    color: #fff;
+    color: var(--footerTextColor);
     font-size: 17px;
     line-height: 29px;
     font-weight: 700;
@@ -236,7 +269,7 @@
  .footer .footer_about--text {
     font-size: 15px;
     line-height: 25px;
-    color: #fff;
+    color: var(--footerTextColor);
     padding: 0 0 16px
 }
 
@@ -249,7 +282,7 @@
     position: relative;
     padding: 12px 25px 12px 0;
     text-align: left;
-    border-bottom: 1px solid rgba(255, 255, 255, .1)
+    border-bottom: 1px solid var(--borderColorDark);
 }
 
  .footer .footer_navigation--item::before {
@@ -260,13 +293,13 @@
     top: 50%;
     transform: translate(0, -50%);
     margin-top: 3px;
-    color: #fff;
+    color: var(--footerTextColor);
     font-size: 12px;
     font-family: fontawesome
 }
 
  .footer .footer_navigation--link {
-    color: #fff;
+    color: var(--footerTextColor);
     font-size: 15px;
     line-height: 22px
 }
@@ -282,7 +315,7 @@
  .footer .footer_contact_info--item {
     padding: 10px 0;
     position: relative;
-    color: #fff;
+    color: var(--footerTextColor);
     font-size: 15px;
     line-height: 25px;
     list-style: none
@@ -304,8 +337,8 @@
 
 
 .contact_card {
-    background: #fff;
-    border: 1px solid #e9e9e9;
+    background: var(--bgColor);
+    border: 1px solid var(--borderColor);  
     border-radius: 3px;
     position: relative;
     text-align: center;
@@ -320,7 +353,7 @@
     top: 37px;
     left: 50%;
     transform: translate(-50%, 0);
-    color: #59bcdb
+    color: var(--borderColor)
 }
 
 .contact_card .contact_card--title {
@@ -330,24 +363,24 @@
 
 .contact_card .contact_card--text {
     padding: 0 0 10px;
-    color: #969696;
+    color: var(--textColor);
     font-size: 16px;
     line-height: 23px
 }
 
 .contact_card .contact_card--text a {
-    color: #969696
+    color: var(--textColor)
 }
 
 .contact_card .am-btn-secondary {
     background-color: transparent;
-    color: #59bcdb;
-    border-color: #59bcdb;
+    color: var(--borderColor);
+    border-color: var(--borderColor);
     border-width: 2px;
     padding: 12px 18px
 }
 
 .contact_card .am-btn-secondary:hover {
-    background-color: #59bcdb;
-    color: #fff
+    background-color: var(--borderColor);
+    color: var(--bgColor)
 }

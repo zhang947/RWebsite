@@ -1,0 +1,42 @@
+:root[theme='light'] {
+    /*白天主题*/
+    --bgColor: #fff;
+    /*白天大的背景颜色*/
+    --textColorDark: #262626;
+    /*白天文本颜色*/
+    --titleColor: #60a5fa;
+    /*白天标题颜色*/
+    --borderColor: #e9e9e9;
+    --borderColorDark: rgba(255, 255, 255, .1);
+    --hoverColor: #6975a6;
+    --textColor: #9b9b9b;
+    --navTextColor: #333;
+    --navBorderColor: #e9e9e9;
+    --headlineButtonColor: var(--textColorDark);
+    --footerTextColor: #fff;
+}
+
+:root[theme='dark'] {
+    /*深色主题*/
+    --bgColor: #292929;
+    /*深色背景 - 选择稍微柔和的黑色*/
+    --textColorDark: #e5e7eb;
+    /*主要文本颜色 - 略微灰白色调*/
+    --titleColor: #60a5fa;
+    /*标题颜色 - 柔和的蓝色*/
+    --borderColor: #444141;
+    /*边框颜色*/
+    --borderColorDark: rgba(255, 255, 255, 0.15);
+    /*深色边框*/
+    --hoverColor: #8ba4e8;
+    /*悬停颜色 - 亮蓝色*/
+    --textColor: #bbbdc2;
+    /*次要文本颜色*/
+    --navTextColor: #d1d1d1;
+    /*导航文本颜色*/
+    --navBorderColor: #404040;
+    /*导航边框颜色*/
+    --headlineButtonColor: var(--textColorDark);
+    /*底部文本颜色*/
+    --footerTextColor: #e2e2e2;
+}

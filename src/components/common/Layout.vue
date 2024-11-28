@@ -20,10 +20,5 @@ export default {
 </script>
 
 <style scoped>
-.main-content{
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
+
 </style>

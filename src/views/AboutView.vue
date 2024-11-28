@@ -1,11 +1,7 @@
 <template>
 	<Layout>
 		<div class="section">
-			<div class="container" style="max-width: 1160px">
-				<!-- <div class="section--header">
-					<h2 class="section--title">{{companyInfo.name}}</h2>
-					<p class="section--description">{{companyInfo.introduction}}</p>
-				</div> -->
+			<div style="max-width: 1160px">
 
 				<div class="about-container">
 					<div class="am-g">
@@ -100,6 +96,10 @@ export default {
 			]
 		}
 	},
+	// created() {
+	// 	let theme = localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light'
+	// 	document.documentElement.setAttribute('theme', theme)
+	// }
 }
 </script>
 
